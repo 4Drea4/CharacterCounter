@@ -12,8 +12,7 @@ export const StatsDisplay: React.FC<StatsDisplayProps> = ({
         <h3> Your Stats</h3>
         <p>Character Count: {characterCount}</p>
         <p> Word Count:{wordCount} </p>
-        showReadingTime = {true}
-        <p> Estimated Reading Time: {readingTime}</p>
+        <p> Estimated Reading Time: {showReadingTime ? readingTime :"We could not calculate the time on this one" }  </p>
         
         
         </div>
