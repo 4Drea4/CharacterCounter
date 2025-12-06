@@ -11,3 +11,4 @@
 
 References:
 [Boolean optionas and displaying them ](https://www.youtube.com/watch?v=uvEAvxWvwOs)<br>
+[Use state](https://legacy.reactjs.org/docs/faq-state.html)
