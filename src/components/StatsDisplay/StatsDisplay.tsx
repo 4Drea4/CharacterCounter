@@ -1,23 +1,21 @@
 import React from 'react';
 import type {StatsDisplayProps} from '../../types';
-import { TextStats } from '../../types';
 
 export const StatsDisplay: React.FC<StatsDisplayProps> = ({
     //destructuring 
    stats: { characterCount, wordCount, readingTime 
     } ,
-    showReadingTime = true,
-
-
+    showReadingTime =true,
 }) => {
     return (
-        <div className="w-full">
-            <section
-            className ="statsDisplay "
-            characterCount  ={characterCount}
-            wordCount= {wordCount}
-           readingTime= {readingTime}
-            />
+        <div className="stats">
+        <h3> Your Stats</h3>
+        <p>Character Count: {characterCount}</p>
+        <p> Word Count:{wordCount} </p>
+        showReadingTime = {true}
+        <p> Estimated Reading Time: {readingTime}</p>
+        
+        
         </div>
     );
 };
