@@ -4,6 +4,21 @@ import type { CharacterCounterProps} from '../../types/index.ts';
 import  { StatsDisplay} from '../StatsDisplay/StatsDisplay.tsx';
 import  { TextInput} from '../TextInput/TextInput.tsx';
 
+// i know i have to pass the value of stats and input down from the parent of charactercounter but I do not know how to 
+export default function UpdateStats(){
+    const [input, setInput] = useState('');
+    const [stats, setStats] = useState(characterCount: 0, wordCount:0, readingTime:0);
+    const 
+    
+
+
+    return (
+        <div>
+            <h2> </h2>
+            <input className='input' onClick={}></input>
+        </div>
+    )
+}
 
 export const CharacterCounter: React.FC<CharacterCounterProps> = ({
     
