@@ -11,15 +11,24 @@ import type { StatsDisplay } from '../StatsDisplay/StatsDisplay.tsx';
 
 
 export default const CharacterCounter: React.FC<CharacterCounterProps> =  ({
-
-const [text ,setInput] = useState("");
+//set variable for input and function to update input 
+const [input ,setInput] = useState("");
 // pass function instead of object
+
+// const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => { //handles the event
+
+
+//need an event 
+onKeyDown
+
+
 }) => {
     return (
     <div>
     <h2> Character Count</h2>
     
     // text input
+    <input></input>
         //event on type
     
     //stats here

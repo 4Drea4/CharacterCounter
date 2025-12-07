@@ -9,9 +9,9 @@ export const TextInput: React.FC<TextInputProps> = ({
 
 }) => {
     return (
-        <div className="w-full">
+        <div className="text-input">
             <textarea
-            className="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className=" text-area w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             placeholder={placeholder}
             defaultValue= {initialValue}
             //user types which is an event, and TextInput extracts event.target.value and then TextInput will call the parent function which is onTextChange and the parent will update its state
