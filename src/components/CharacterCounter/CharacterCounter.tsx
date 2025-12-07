@@ -1,19 +1,34 @@
 //parent component because it will render stats display and input
 import React, {useState} from 'react';
 import type { CharacterCounterProps} from '../../types/index.ts';
-import type { StatsDisplay} from '../../types/index.ts';
-import type { TextInput} from '../TextInput/TextInput.tsx';
-
+import  { StatsDisplay} from '../StatsDisplay/StatsDisplay.tsx';
+import  { TextInput} from '../TextInput/TextInput.tsx';
 
 
 export const CharacterCounter: React.FC<CharacterCounterProps> = ({
-
+    
  }) => {
  //state
-    const [input, setInput] = useState({word:0 , character: 0,  reading:0});
+ const [input, setInput] = useState({word:0 , character: 0,  reading:0});
+   
 //so for input i know we either start with an empty state or pass in placeholder from the input component but the video I am seeing is creating JS objects so I think i have to pass in objects that would be the equivalent to the character count and word count found in the other components
 
-//
+//update with callback events
+//passing use spread operator on object as to not use exact object
+
+
+//a bit confused here because in the tutorial the user is inputting various values and I realized that I need some sort of function that takes the input and then calculates the word count, reading time, and word count son actuallity we shouldnt need as many functions that are written this way
+    function handleWordCount(event){
+        setInput(i => ({...i , word: event.target.value})); //use spread operator to make new instance of input object js object with extra parentheses. arrow function indicate that it is the previous state by using i 
+    }
+
+    function handleCharacterCount(event){
+        setInput(i => ({...i, character: event.target.value}));
+    }
+
+    function handleReadingTime(event){
+        setInput(i => ({ ...i, reading:event.target.value}));
+    }
 
  return (
     //passing in fake data rn for styling
@@ -21,10 +36,10 @@ export const CharacterCounter: React.FC<CharacterCounterProps> = ({
     <div className='character-counter-div'>
         <h2>Character Counter</h2>
         <input type="text" className='usertexts'></input>
-        <p> Word Count: {input.word}</p>
-        <p> Character Count: {input.character}</p>
-        <p> Target Reading Time: {input.reading}</p>
-
+        <p> Word Count: </p> {input.word} onChange={handleWordCount}
+        <p> Character Count:</p> {input.character}  onChange={handleCharacterCount}
+        <p> Target Reading Time: </p>
+        {input.reading} onChange={handleReadingTime}  
 
     </div>
 )
