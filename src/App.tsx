@@ -1,34 +1,19 @@
 import './App.css'
-import { CharacterCounter } from './components/CharacterCounter/CharacterCounter.tsx'
+import { CharacterCounter } from './components/CharacterCounter/CharacterCounter'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    // title
+
     <div
     style={{
       display:'flex',
       flexDirection: 'column',
     }}>
+  {/* title */}
       <h1> Whats on your mind?</h1>
 
-    {/* CharacterCounter */}
+    {/* CharacterCounter(parent) */}
     <CharacterCounter/>
-
-     {/* text input */}
-    <div className='input'>
-
-
-    </div>
-    
-    {/* Text stats */}
-      <div className='card'>
-    
-    
-       
-    </div>
-
 
 
     </div>
@@ -36,4 +21,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

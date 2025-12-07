@@ -8,14 +8,24 @@ import type { TextInput} from '../TextInput/TextInput.tsx';
 
 export const CharacterCounter: React.FC<CharacterCounterProps> = ({
 
- });
- 
-    //state
-   const [input, setInput] = useState('');
+ }) => {
+ //state
+    const [input, setInput] = useState('');
 
  return (
-)
+    //passing in fake data rn for styling
 
+    <div className='character-counter-div'>
+        <h2>Character Counter</h2>
+
+        <p> Word Count: </p>
+        <p> Character Count: </p>
+        <p> Target Reading Time</p>
+
+
+    </div>
+)
+};
 
 
 //character counter is the parent
