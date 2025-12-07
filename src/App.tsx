@@ -10,7 +10,7 @@ function App() {
       flexDirection: 'column',
     }}>
   {/* title */}
-      <h1> Whats on your mind?</h1>
+      <h1> Alien Communicator</h1>
 
     {/* CharacterCounter(parent) */}
     <CharacterCounter/>

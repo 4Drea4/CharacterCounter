@@ -54,7 +54,7 @@ export const CharacterCounter: React.FC<CharacterCounterProps> = () => {
     //passing in fake data rn for styling
 
     <div className='character-counter-div'>
-        <h2>Character Counter</h2>
+        <h2>Type Message to communicate with the beyond </h2>
         <input type="text" className='usertexts'></input>
         <p> Word Count: {input.word}  </p> 
         {/* onChange={handleWordCount} */}
