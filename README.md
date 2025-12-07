@@ -1,7 +1,7 @@
 # Character Counter
 ## Andrea E
 *December 6<sup>th</sup>*
-![Browswer Image](/image.png)
+![Browswer Image](public/image.png)
 ### Reflection
 1. What considerations did you make when calculating reading time?
 - Things I am considering are the average persons reading time, how many words per minute and I may consider character count to words. 
