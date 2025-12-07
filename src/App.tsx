@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { CharacterCounter } from './components/CharacterCounter/CharacterCounter.tsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +12,9 @@ function App() {
       flexDirection: 'column',
     }}>
       <h1> Whats on your mind?</h1>
+
+    {/* CharacterCounter */}
+    <CharacterCounter/>
 
      {/* text input */}
     <div className='input'>

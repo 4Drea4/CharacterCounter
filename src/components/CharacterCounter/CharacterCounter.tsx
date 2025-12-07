@@ -5,13 +5,15 @@ import type { TextInput} from '../TextInput/TextInput.tsx';
 
 
 
-export const updateStats: React.FC<CharacterCounterProps>{
+export const CharacterCounter: React.FC<CharacterCounterProps> = ({
+
     const [stats, setStats] = useState({ characterCount: 0, wordCount:0, readingTime:0
  });
-export const inputText: React.FC<TextInput>{
+ 
+    //callback function 
+    const inputText: React.FC<TextInput>{
     const [input, setInput] = useState({
 
- const [input, setInput] = useState({
 
  })}
 
@@ -27,9 +29,9 @@ export const inputText: React.FC<TextInput>{
 export default
 
 //character counter is the parent
-//character counter has to pass input and stats
+//character counter has to pass input and stats in a callback
 //character counter has to render and return
- 
+
 
 // I am working on creating another use state ordeal for the input here but I am slowly working it out 
 
