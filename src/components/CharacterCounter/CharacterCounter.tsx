@@ -10,17 +10,20 @@ export const CharacterCounter: React.FC<CharacterCounterProps> = ({
 
  }) => {
  //state
-    const [input, setInput] = useState('');
+    const [input, setInput] = useState({word:0 , character: 0,  reading:0});
+//so for input i know we either start with an empty state or pass in placeholder from the input component but the video I am seeing is creating JS objects so I think i have to pass in objects that would be the equivalent to the character count and word count found in the other components
+
+//
 
  return (
     //passing in fake data rn for styling
 
     <div className='character-counter-div'>
         <h2>Character Counter</h2>
-
-        <p> Word Count: </p>
-        <p> Character Count: </p>
-        <p> Target Reading Time</p>
+        <input className='usertexts'></input>
+        <p> Word Count: {input.word}</p>
+        <p> Character Count: {input.character}</p>
+        <p> Target Reading Time: {input.reading}</p>
 
 
     </div>
