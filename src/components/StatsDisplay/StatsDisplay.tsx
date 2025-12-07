@@ -1,7 +1,7 @@
 import React from 'react';
 import type {StatsDisplayProps} from '../../types';
 
-export const StatsDisplay: React.FC<StatsDisplayProps> = ({
+export const StatsDisplay: React.FC<StatsDisplayProps > = ({
     //destructuring 
    stats: { characterCount, wordCount, readingTime 
     } ,
