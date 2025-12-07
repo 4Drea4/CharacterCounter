@@ -13,4 +13,4 @@
 - [Boolean conditionals ](https://www.youtube.com/watch?v=uvEAvxWvwOs)<br>
 - [Use state](https://legacy.reactjs.org/docs/faq-state.html)<br>
 - [Very helpful](https://www.youtube.com/watch?v=YxQlt3n1ZPA)<br>
--[Send data from child to parent](https://www.youtube.com/watch?v=NkKrPeX1W5E&t=13s)
+- [Send data from child to parent](https://www.youtube.com/watch?v=NkKrPeX1W5E&t=13s)

@@ -1,6 +1,11 @@
-
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+}
 body{ 
-  background: url('alien.png') center ;
+  background: url('alien.png') center center no-repeat;
   background-size: cover;
   margin:0;
   display: flex;
@@ -30,4 +35,25 @@ body{
   display: flex;
   justify-content: space-between;
   color: #cfe9ff;
+ }
+
+ .usertexts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  min-width: 300px;
+  min-height: 100px;
+  overflow-y: auto;
+ }
+
+ h1, h2{
+  display: flex;
+  justify-content: center;
+ }
+
+ #textbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
