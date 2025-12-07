@@ -20,7 +20,7 @@ export const CharacterCounter: React.FC<CharacterCounterProps> = ({
 
     <div className='character-counter-div'>
         <h2>Character Counter</h2>
-        <input className='usertexts'></input>
+        <input type="text" className='usertexts'></input>
         <p> Word Count: {input.word}</p>
         <p> Character Count: {input.character}</p>
         <p> Target Reading Time: {input.reading}</p>
