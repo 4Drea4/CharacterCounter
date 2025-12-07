@@ -2,13 +2,26 @@
 import React, {useState} from 'react';
 import type { CharacterCounterProps} from '../../types/index.ts';
 import  { StatsDisplay} from '../StatsDisplay/StatsDisplay.tsx';
-import  { TextInput} from '../TextInput/TextInput.tsx';
+import type { TextStats } from '../../types/index.ts';
+import type { TextInputProps } from '../../types/index.ts';
 
-// i know i have to pass the value of stats and input down from the parent of charactercounter but I do not know how to 
-export default function UpdateStats(){
-    const [input, setInput] = useState('');
-    const [stats, setStats] = useState(characterCount: 0, wordCount:0, readingTime:0);
+// i know i have to pass the value of stats and input down from the parent of charactercounter but I do not know the route to take
+
+export function UpdateStats(){
+    const [input, setInput] = useState<TextInputProps>({
+        onTextChange: (text: string) => void,
+        placeholder?: "",
+        initialValue?: "",
+
+    });
+    //creating a variable of the object using type interface 
+    const [stats, setStats] = useState<TextStats>({
+      characterCount: 0,
+       wordCount:0, 
+       readingTime:0
+ } );
     const 
+     
     
 
 
