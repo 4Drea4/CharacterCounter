@@ -9,21 +9,15 @@ import type { TextInputProps } from '../../types/index.ts';
 
 export function UpdateStats(){
     const [input, setInput] = useState<TextInputProps>({
-        onTextChange: (text: string) => void,
-        placeholder?: "",
-        initialValue?: "",
 
-    });
     //creating a variable of the object using type interface 
     const [stats, setStats] = useState<TextStats>({
       characterCount: 0,
        wordCount:0, 
        readingTime:0
- } );
-    const 
-     
+ }} );
     
-
+ 
 
     return (
         <div>
