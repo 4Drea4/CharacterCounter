@@ -8,28 +8,26 @@ import type { TextInputProps } from '../../types/index.ts';
 // i know i have to pass the value of stats and input down from the parent of charactercounter but I do not know the route to take
 
 export function UpdateStats(){
-    const [input, setInput] = useState<TextInputProps>({
-
+    const [input, setInput] = useState<TextInputProps | null>(null);
     //creating a variable of the object using type interface 
     const [stats, setStats] = useState<TextStats>({
       characterCount: 0,
        wordCount:0, 
        readingTime:0
- }} );
+ } );
     
  
 
     return (
         <div>
             <h2> </h2>
-            <input className='input' onClick={}></input>
+            <input className='input' ></input>
         </div>
-    )
+    );
 }
 
-export const CharacterCounter: React.FC<CharacterCounterProps> = ({
-    
- }) => {
+export const CharacterCounter: React.FC<CharacterCounterProps> = () => {
+
  //state
  const [input, setInput] = useState({word:0 , character: 0,  reading:0});
    
@@ -58,13 +56,15 @@ export const CharacterCounter: React.FC<CharacterCounterProps> = ({
     <div className='character-counter-div'>
         <h2>Character Counter</h2>
         <input type="text" className='usertexts'></input>
-        <p> Word Count: </p> {input.word} onChange={handleWordCount}
-        <p> Character Count:</p> {input.character}  onChange={handleCharacterCount}
-        <p> Target Reading Time: </p>
-        {input.reading} onChange={handleReadingTime}  
+        <p> Word Count: {input.word}  </p> 
+        {/* onChange={handleWordCount} */}
+        <p> Character Count:{input.character}</p>  
+         {/* onChange={handleCharacterCount} */}
+        <p> Target Reading Time:  {input.reading}</p>
+        {/* onChange={handleReadingTime}   */}
 
     </div>
-)
+);
 };
 
 
