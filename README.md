@@ -4,11 +4,14 @@
 
 ### Reflection
 1. How did you handle state updates when the text changed?
+-
 2. What considerations did you make when calculating reading time?
+- Things I am considering are the average persons reading time, how many words per minute and I may consider character count to words. 
 3. How did you ensure the UI remained responsive during rapid text input?
+- I plan on using flex box when styling to handle UI changes. I may also add restrictions to how large containers can get. I may also consider adding things like inner scroll! 
 4. What challenges did you face when implementing the statistics calculations?
-
+- 
 
 References:
-[Boolean optionas and displaying them ](https://www.youtube.com/watch?v=uvEAvxWvwOs)<br>
-[Use state](https://legacy.reactjs.org/docs/faq-state.html)
+- [Boolean optionas and displaying them ](https://www.youtube.com/watch?v=uvEAvxWvwOs)<br>
+- [Use state](https://legacy.reactjs.org/docs/faq-state.html)

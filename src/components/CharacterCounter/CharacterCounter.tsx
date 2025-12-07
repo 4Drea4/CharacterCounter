@@ -1,8 +1,10 @@
 //parent component because it will render stats display and input
 import React, {useState} from 'react';
-import type { TextInput} from '../TextInput.tsx';
-import type { StatsDisplay } from '../CharacterCounter.tsx';
+import React from 'react';
 import type { CharacterCounterProps } from '../../types/index.ts';
+import type { TextInput} from '../TextInput/TextInput.tsx';
+import type { StatsDisplay } from '../StatsDisplay/StatsDisplay.tsx';
+
 
 //create two use states one for text input and one for character count
 
