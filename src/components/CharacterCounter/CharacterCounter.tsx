@@ -6,44 +6,48 @@ import type { TextInput} from '../TextInput/TextInput.tsx';
 import type { StatsDisplay } from '../StatsDisplay/StatsDisplay.tsx';
 
 
-//create two use states one for text input and one for character count
+// //create two use states one for text input and one for character count
 
 
 
 export default const CharacterCounter: React.FC<CharacterCounterProps> =  ({
 //set variable for input and function to update input 
-const [input ,setInput] = useState("");
-// pass function instead of object
+ const [input ,setInput] = useState("");
+//  pass function instead of object
 
-// const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => { //handles the event
-
-
-//need an event 
-onKeyDown
+// // const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => { //handles the event
 
 
-}) => {
-    return (
-    <div>
-    <h2> Character Count</h2>
+// //need an event 
+// onKeyDown
+
+
+// }) => {
+//     return (
+//     <div>
+//     <h2> Character Count</h2>
     
-    // text input
-    <input></input>
-        //event on type
+//     // text input
+//     <input></input>
+//         //event on type
     
-    //stats here
-        //event on type
+//     //stats here
+//         //event on type
 
 
-    </div>
-    )
+//     </div>
+//     )
 
-    //reset stats when empty
+//     //reset stats when empty
 
+// }
+
+
+function updateStats(){
+    const [stats, setStats] = useState({
+        
+    })
 }
-
-
-
 
 
 
