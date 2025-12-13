@@ -9,11 +9,12 @@ import { TextInput } from '../TextInput/TextInput.tsx';
 
 export const CharacterCounter: React.FC<CharacterCounterProps> = ({
     //destruct variables that will later be used as limits
-    minWords: 75 ,
-    maxWords: 450,
+    minWords= 75 ,
+    maxWords= 450,
     
 })=> {
     const [text, setText ] = useState("");
+    const wordCount = text.split(" ").length;
 }
 
 
@@ -22,7 +23,7 @@ export const CharacterCounter: React.FC<CharacterCounterProps> = ({
      <div>
         <TextInput onTextChange={setText}/>
         <StatsDisplay stats={stats}/>
-        <p>{Text.split(" ").length} words and {Text.length} characters</p>
+        <p> Words youve written: {wordCount}  and {Text.length} characters</p>
         <p> Max: {maxWords} and Min : {minWords} </p>
     </div> 
      )
