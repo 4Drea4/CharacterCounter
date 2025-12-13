@@ -3,15 +3,14 @@ import React, {useState} from 'react';
 import type { CharacterCounterProps} from '../../types/index.ts';
 import  { StatsDisplay} from '../StatsDisplay/StatsDisplay.tsx';
 import type { TextStats } from '../../types/index.ts';
-import type { TextInputProps } from '../../types/index.ts';
 import { TextInput } from '../TextInput/TextInput.tsx';
 
 
 
-export const counter: React.FC<CharacterCounterProps> = ({
-    //creating variables that will later be used as limits
-    minWords: 75,
-    maxWords:300,
+export const CharacterCounter: React.FC<CharacterCounterProps> = ({
+    //destruct variables that will later be used as limits
+    minWords: 75 ,
+    maxWords: 450,
     
 })=> {
     const [text, setText ] = useState("");
@@ -24,6 +23,7 @@ export const counter: React.FC<CharacterCounterProps> = ({
         <TextInput onTextChange={setText}/>
         <StatsDisplay stats={stats}/>
         <p>{Text.split(" ").length} words and {Text.length} characters</p>
+        <p> Max: {maxWords} and Min : {minWords} </p>
     </div> 
      )
 
