@@ -17,20 +17,13 @@ export const counter: React.FC<CharacterCounterProps> = ({
     const [text, setText ] = useState("");
 }
 
-   
-
-   const stats: StatsDisplayProps ={
-    characterCount: counter.length,
-    text.split("").length)
-
-   }
-  
 
     return(
 
      <div>
-     <TextInput onTextChange={setCounter}/>
-     <StatsDisplay stats={stats}
+        <TextInput onTextChange={setText}/>
+        <StatsDisplay stats={stats}/>
+        <p>{Text.split(" ").length} words and {Text.length} characters</p>
     </div> 
      )
 
