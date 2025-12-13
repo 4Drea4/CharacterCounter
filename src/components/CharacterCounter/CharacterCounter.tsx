@@ -8,13 +8,16 @@ import type { TextInputProps } from '../../types/index.ts';
 
 
 export const counter: React.FC<CharacterCounterProps> = ({
-   const wordsAMin = 75;
-   const maxCap = 300;
-   const [counter, setCounter ] useState= ""
+    //creating variables that will later be used as limits
+    wordsMin = 75;
+    maxCap = 300;
+})=>
+
+    const [counter, setCounter ] useState= ("");
 
    const stats: StatsDisplayProps ={
     characterCount: counter.length,
-    
+
 
    }
   
@@ -26,7 +29,6 @@ export const counter: React.FC<CharacterCounterProps> = ({
      )
 
 };
-)
 
 
 //I need a function that passes in type stats display 
