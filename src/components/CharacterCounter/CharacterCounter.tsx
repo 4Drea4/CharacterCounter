@@ -5,16 +5,33 @@ import  { StatsDisplay} from '../StatsDisplay/StatsDisplay.tsx';
 import type { TextStats } from '../../types/index.ts';
 import type { TextInputProps } from '../../types/index.ts';
 
+//declare state via parent and pass down to children via props
+
+//Talking to Bryan about how information is passed with parent and child I believe I chose the wrong parent
+//declare state in app so i can pass the info 
+//child 2 which is this file I can pass an updater function
+
+
+
+
+
+
+
+
+
+
+
+
 // i know i have to pass the value of stats and input down from the parent of charactercounter but I do not know the route to take
 
-export function UpdateStats(){
-    const [input, setInput] = useState<TextInputProps | null>(null);
-    //creating a variable of the object using type interface 
-    const [stats, setStats] = useState<TextStats>({
-      characterCount: 0,
-       wordCount:0, 
-       readingTime:0
- } );
+// export function UpdateStats(){
+//     const [input, setInput] = useState<TextInputProps | null>(null);
+//     //creating a variable of the object using type interface 
+//     const [stats, setStats] = useState<TextStats>({
+//       characterCount: 0,
+//        wordCount:0, 
+//        readingTime:0
+//  } );
     
  
 
