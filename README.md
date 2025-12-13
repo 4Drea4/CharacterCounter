@@ -11,6 +11,7 @@
 
 ### References:
 - [JS Tutorial](https://www.youtube.com/watch?v=PvkYmXkVQQ8&t=21s)
+- [Stack Overflow](https://stackoverflow.com/questions/72866592/how-to-create-a-character-counter-in-react)
 - [Boolean conditionals ](https://www.youtube.com/watch?v=uvEAvxWvwOs)<br>
 - [Use state](https://legacy.reactjs.org/docs/faq-state.html)<br>
 - [Very helpful](https://www.youtube.com/watch?v=YxQlt3n1ZPA)<br>
